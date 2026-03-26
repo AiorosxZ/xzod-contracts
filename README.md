@@ -206,7 +206,7 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 | 🔥 Fire | BP ×1.25, +0.25/Fire sign (max ×2.0) · Clan weight 1.5 | +50% GP |
 | 💧 Water | Lunar airdrop eligibility · LP yield +5%/Water sign (max +15%) | LP Access |
 | 🌬️ Air | ZOD↔ZOD swap fee 0.30%→0.20%, −0.05%/Air sign (min 0.05%) · Clan deadline 48h before FM | — |
-| 🌱 Earth | +2% staking APY, +1%/Earth sign (max +5%) | +50% VP |
+| 🌍 Earth | +2% staking APY, +1%/Earth sign (max +5%) | +50% VP |
 
 ---
 
