@@ -9,18 +9,95 @@
 
 ---
 
+## TL;DR
+
+xZod is a cyclical DeFi protocol where:
+- **Yield rotates monthly** based on the zodiac calendar — predictable years in advance
+- **Users compete in burn-based PvP cycles** anchored to Full Moons
+- **NFTs provide permanent, DAO-governed advantages** to active participants
+- **xZile** — our Polygon CDK Supernet — is the endgame: a fast blockchain where xZOD becomes native gas, and stakers earn **predictable gas discounts tied to the zodiac calendar**
+
+---
+
 ## Overview
 
 xZod Network fuses the twelve-sign zodiac calendar with on-chain tokenomics to create a **predictable, cyclical DeFi protocol**. Two tokens power the ecosystem:
 
-- **xZOD** — reserve asset, hard cap 100M, listed on Polygon DEX
+- **xZOD** — reserve asset, hard cap 100M, designed for Polygon DEX listing
 - **12 ZOD tokens** (ZARI→ZPIS) — protocol-only utility tokens, one per zodiac sign
-
+- **Core invariant:** 1 xZOD always equals a basket of all 12 ZOD signs combined —
+fully backed and redeemable on demand. A holder can convert 1 xZOD into any 
+combination of the 12 signs (12 ZLEO, or 6 ZARI + 6 ZGEM, or any mix) — the 
+Unified Reserve Vault prices each sign dynamically based on demand, but the full 
+basket always resolves to exactly 1 xZOD. This invariant can never be broken.
 APY rotates monthly with the zodiac calendar. Clans compete in monthly **Burn Wars** anchored to Full Moons. NFTs provide permanent gameplay bonuses governed by DAO vote each season.
 
 🌐 **Website:** [xzod.io](https://xzod.io)  
 📄 **Whitepaper:** [xzod.io/whitepaper](https://xzod.io/whitepaper)  
 🎥 **Demo:** [YouTube](https://www.youtube.com/watch?v=hdQ2uiK0gUU)
+
+---
+
+## Current Status
+
+- ✅ All core contracts deployed and verified on **Ethereum Sepolia** (test phase)
+- ✅ Staking, Burn Wars cycles, and NFT mechanics fully implemented
+- ✅ Frontend live at [xzod.io](https://xzod.io) — fully functional testnet UI
+- ✅ 6 Burn Wars cycles created and active on testnet
+- ✅ Active testing phase — admin workflows, reward distribution, cycle finalization validated
+- 🎯 **Target deployment: Polygon PoS mainnet** — pending audit
+
+> **Note on network:** Current contracts run on Ethereum Sepolia for development and testing. All production deployment targets **Polygon PoS**, chosen for its low fees, fast finality, and CDK Supernet infrastructure required for xZile (Chapter 2).
+
+---
+
+## Grant Objective
+
+xZod is seeking a Polygon grant to:
+
+- Complete smart contract security audit
+- Deploy on Polygon PoS mainnet
+- Bootstrap initial liquidity (xZOD/USDC pool)
+- Incentivize early users during Season 1 launch (24 Dec 2026)
+
+This grant will accelerate xZod's transition from testnet MVP to a live Polygon-native DeFi protocol — and lay the foundation for xZile, a flagship Polygon CDK Supernet.
+
+---
+
+## Why Polygon
+
+xZod is designed for high-frequency, low-cost cyclical DeFi mechanics that demand Polygon's infrastructure:
+
+- **Monthly reward cycles (Burn Wars)** — dozens of on-chain interactions per cycle per user
+- **Frequent staking operations** — 12 ZOD tokens with rotating APY every ~30 days
+- **NFT-based dynamic boosts** — on-chain bonus computation at every burn transaction
+- **Real-time clan competition** — leaderboard updates require fast, cheap finality
+
+Polygon provides exactly this:
+- **Low transaction fees** → viable micro-interactions (burning small amounts, claiming rewards)
+- **Fast finality** → real-time clan leaderboards and cycle management
+- **Polygon CDK** → the foundation for **xZile**, our sovereign Supernet where xZOD becomes native gas
+
+### xZile — The Endgame: Predictable Gas Discounts
+
+The ultimate goal of xZod is a **sovereign blockchain with calendar-predictable economics**.
+
+On xZile (Polygon CDK Supernet, targeting 2028):
+- **xZOD becomes the native gas token** — every transaction burns xZOD supply organically
+- **Gas discounts are tied to the zodiac calendar** — stake the current HOT ZOD sign for 90+ days and unlock structural gas fee reductions of up to 50%
+- **Discount windows are known years in advance** — because the zodiac calendar is astronomically fixed, businesses and developers can plan infrastructure costs with a precision no other blockchain offers
+- **Priority block inclusion** for HOT token stakers — faster execution, predictable cost, no auction-based fee market surprises
+
+| Tier | HOT ZOD Staked ≥90d | Gas Discount | Lane |
+|---|---|---|---|
+| Standard | None | 0% | Normal mempool |
+| Contributor | 1,000+ | 15% | Priority |
+| Advocate | 10,000+ | 30% | Fast lane |
+| Constellation | 100,000+ | 50% | Express lane |
+
+**xZile is the first blockchain where gas costs are a calendar event, not a market event.**
+
+xZod aims to become a native Polygon DeFi primitive — and xZile, a flagship Polygon CDK Supernet.
 
 ---
 
@@ -60,10 +137,10 @@ contracts/
 
 | Contract | Address |
 |---|---|
-| xZOD | `0x017f4333Aa7e83fA42d119d5489c41e3648c9D2f` |
-| ZODStakingVaultV2 | `0x4A15Aa5A360e718c0222E8Fa03E2785D10A8c820` |
-| SeasonWars V2.3 | `0x5598778158a66d376bd96243FC6bc27316fD2fc8` |
-| ReservePool V3 | `0x125F8D775886FBF7513510300092Fb6de775D1A2` |
+| [xZOD](https://sepolia.etherscan.io/address/0x017f4333Aa7e83fA42d119d5489c41e3648c9D2f) | `0x017f4333Aa7e83fA42d119d5489c41e3648c9D2f` |
+| [ZODStakingVaultV2](https://sepolia.etherscan.io/address/0x4A15Aa5A360e718c0222E8Fa03E2785D10A8c820) | `0x4A15Aa5A360e718c0222E8Fa03E2785D10A8c820` |
+| [SeasonWars V2.3](https://sepolia.etherscan.io/address/0x5598778158a66d376bd96243FC6bc27316fD2fc8) | `0x5598778158a66d376bd96243FC6bc27316fD2fc8` |
+| [ReservePool V3](https://sepolia.etherscan.io/address/0x125F8D775886FBF7513510300092Fb6de775D1A2) | `0x125F8D775886FBF7513510300092Fb6de775D1A2` |
 | ZodiacOracle V2 | `0x32621712B22d7f96618D7d1d646aEEe7c21d9086` |
 | xZodNFT | `0x5249D8eacbD47080642a7d89884CC3A1c0A110e3` |
 | NFTRules | `0xd7e46DfF9E0095C8df9BCc5d2D6230bD4b72e7FF` |
@@ -129,7 +206,7 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 | 🔥 Fire | BP ×1.25, +0.25/Fire sign (max ×2.0) · Clan weight 1.5 | +50% GP |
 | 💧 Water | Lunar airdrop eligibility · LP yield +5%/Water sign (max +15%) | LP Access |
 | 🌬️ Air | ZOD↔ZOD swap fee 0.30%→0.20%, −0.05%/Air sign (min 0.05%) · Clan deadline 48h before FM | — |
-| 🌍 Earth | +2% staking APY, +1%/Earth sign (max +5%) | +50% VP |
+| 🌱 Earth | +2% staking APY, +1%/Earth sign (max +5%) | +50% VP |
 
 ---
 
@@ -138,9 +215,22 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 - **Solidity** `^0.8.20`
 - **OpenZeppelin** 5.x
 - **Standards:** ERC-20, ERC-1155
-- **Chapter 1:** Polygon PoS (testnet: Sepolia)
+- **Current deployment:** Ethereum Sepolia (test phase)
+- **Target deployment:** Polygon PoS mainnet
 - **Chapter 2:** Polygon CDK Supernet (xZile, 2028)
 - **AMM:** Uniswap V2
+
+---
+
+## Security
+
+- xZOD is a **minimal ERC-20** — standard OpenZeppelin, no custom logic, minimal attack surface
+- All protocol complexity isolated in peripheral contracts — a bug in SeasonWars cannot drain xZOD
+- **Reentrancy protections** via OpenZeppelin ReentrancyGuard on all value-handling contracts
+- **Access control** — Ownable pattern with role separation (owner, treasury, staking pool)
+- **Non-upgradeable by design** — xZOD contract is immutable; NFTRules is the only DAO-updatable module
+- Full independent audit planned before Polygon mainnet deployment
+- Audit reports will be published in this repository
 
 ---
 
@@ -155,16 +245,6 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 | Season 2 | Jun 2027 | ⏳ Planned |
 | Season 3 | Dec 2027 | ⏳ Planned |
 | xZile migration | May–Jun 2028 | 🌠 Vision |
-
----
-
-## Security
-
-- xZOD is a minimal ERC-20 — no custom logic, minimal attack surface
-- All protocol complexity is isolated in peripheral contracts (ReservePool, SeasonWars, NFTRules)
-- A bug in a peripheral contract cannot drain xZOD
-- Full audit planned before Polygon mainnet deployment
-- Audit reports will be published in this repository
 
 ---
 
