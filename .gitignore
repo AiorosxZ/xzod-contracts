@@ -1,0 +1,36 @@
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Hardhat / Foundry artifacts
+artifacts/
+cache/
+out/
+broadcast/
+
+# Coverage
+coverage/
+coverage.json
+
+# TypeScript
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Private keys / secrets
+*.key
+*.pem
+deployments/private/
