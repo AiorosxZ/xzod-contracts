@@ -210,6 +210,20 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 
 ---
 
+## AI Layer
+
+Three AI features, progressively deployed across seasons:
+
+| Feature | Season | Description |
+|---|---|---|
+| 🔮 Z-Advisor | S1+ | Wallet-aware cycle copilot. Knows your ZOD positions, HOT rotation & Burn Wars leaderboard. Advises — never acts autonomously. |
+| 📊 xZod Intelligence | S3+ | Behavioural analytics built on 18 cycles of on-chain data. Burn patterns, clan momentum, lunar correlations. Probabilities, not predictions. |
+| 🌟 Z-Heroes AI | S2+ | 12 AI-powered clan characters active on X & Discord. Narrative AI that makes the zodiac calendar feel alive. |
+
+> No other DeFi protocol generates AI training data anchored to an astronomically fixed calendar.
+
+---
+
 ## Technical Stack
 
 - **Solidity** `^0.8.20`
@@ -252,7 +266,7 @@ Rewards are paid in the **OPPOSITE token** — the ZOD sign diametrically opposi
 
 - 🌐 [Website](https://xzod.io)
 - 🐦 [Twitter/X](https://x.com/XzodNetwork)
-- 💬 [Discord](https://discord.gg/NBSsQupfnm)
+- 💬 [Discord](https://discord.gg/kGt2pCNWQh)
 - 📱 [Telegram](https://t.me/+SIO2woyEjQozZWE0)
 - 📧 [team@xzod.io](mailto:team@xzod.io)
 
