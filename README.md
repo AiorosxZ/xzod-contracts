@@ -262,6 +262,16 @@ Three AI features, progressively deployed across seasons:
 
 ---
 
+## 🛠 Developer Resources
+
+- **SeasonWars Dev Kit — Example #1: Burn Tracker**  
+  Live tracker built on SeasonWars events + `quoteBurn()`  
+  [github.com/AiorosxZ/seasonwars-burn-tracker-example](https://github.com/AiorosxZ/seasonwars-burn-tracker-example)  
+  → [Live demo](https://aiorosxz.github.io/seasonwars-burn-tracker-example)  
+  → [Integration guide](https://github.com/AiorosxZ/seasonwars-burn-tracker-example/blob/main/INTEGRATION.md)
+
+  ---
+  
 ## Community
 
 - 🌐 [Website](https://xzod.io)
