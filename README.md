@@ -270,6 +270,11 @@ Three AI features, progressively deployed across seasons:
   → [Live demo](https://aiorosxz.github.io/seasonwars-burn-tracker-example)  
   → [Integration guide](https://github.com/AiorosxZ/seasonwars-burn-tracker-example/blob/main/INTEGRATION.md)
 
+- **SeasonWars Dev Kit — Example #2: Strategy Bot**  
+  12× quoteBurn() — ranked strategies before you commit  
+  [github.com/AiorosxZ/seasonwars-strategy-bot-example](https://github.com/AiorosxZ/seasonwars-strategy-bot-example)  
+  → [Live demo](https://aiorosxz.github.io/seasonwars-strategy-bot-example)
+  
   ---
   
 ## Community
