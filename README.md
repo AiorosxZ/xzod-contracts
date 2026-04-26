@@ -274,7 +274,13 @@ Three AI features, progressively deployed across seasons:
   12× quoteBurn() — ranked strategies before you commit  
   [github.com/AiorosxZ/seasonwars-strategy-bot-example](https://github.com/AiorosxZ/seasonwars-strategy-bot-example)  
   → [Live demo](https://aiorosxz.github.io/seasonwars-strategy-bot-example)
-  
+
+  - **SeasonWars Dev Kit — Example #3: Decision Widget**  
+  Plug & play decision widget powered by quoteBurn()  
+  [github.com/AiorosxZ/seasonwars-decision-widget-example](https://github.com/AiorosxZ/seasonwars-decision-widget-example)  
+  → [Live demo](https://aiorosxz.github.io/seasonwars-decision-widget-example)  
+  → [Why integrate](https://aiorosxz.github.io/seasonwars-decision-widget-example/why-integrate.html)
+
   ---
   
 ## Community
