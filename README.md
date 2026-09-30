@@ -1,7 +1,7 @@
 # xZod Network — Smart Contracts
 
 > A cyclical DeFi protocol anchored to the zodiac calendar.  
-> Chapter 1: Polygon PoS · Chapter 2: xZile Supernet (2028)
+> Chapter 1: EVM L2 mainnet · Chapter 2: xZile dedicated app-chain (2028)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.20-blue)](https://soliditylang.org/)
@@ -15,7 +15,7 @@ xZod is a cyclical DeFi protocol where:
 - **Yield rotates monthly** based on the zodiac calendar — predictable years in advance
 - **Users compete in burn-based PvP cycles** anchored to Full Moons
 - **NFTs provide permanent, DAO-governed advantages** to active participants
-- **xZile** — our Polygon CDK Supernet — is the endgame: a fast blockchain where xZOD becomes native gas, and stakers earn **predictable gas discounts tied to the zodiac calendar**
+- **xZile** — our dedicated EVM app-chain — is the endgame: a fast blockchain where xZOD becomes native gas, and stakers earn **predictable gas discounts tied to the zodiac calendar**
 
 ---
 
@@ -23,7 +23,7 @@ xZod is a cyclical DeFi protocol where:
 
 xZod Network fuses the twelve-sign zodiac calendar with on-chain tokenomics to create a **predictable, cyclical DeFi protocol**. Two tokens power the ecosystem:
 
-- **xZOD** — reserve asset, hard cap 100M, designed for Polygon DEX listing
+- **xZOD** — reserve asset, hard cap 100M, designed for DEX listing on an EVM L2
 - **12 ZOD tokens** (ZARI→ZPIS) — protocol-only utility tokens, one per zodiac sign
 - **Core invariant:** 1 xZOD always equals a basket of all 12 ZOD signs combined —
 fully backed and redeemable on demand. A holder can convert 1 xZOD into any 
@@ -45,44 +45,44 @@ APY rotates monthly with the zodiac calendar. Clans compete in monthly **Burn Wa
 - ✅ Frontend live at [xzod.io](https://xzod.io) — fully functional testnet UI
 - ✅ 6 Burn Wars cycles created and active on testnet
 - ✅ Active testing phase — admin workflows, reward distribution, cycle finalization validated
-- 🎯 **Target deployment: Polygon PoS mainnet** — pending audit
+- 🎯 **Target deployment: EVM-compatible L2 mainnet** — pending audit
 
-> **Note on network:** Current contracts run on Ethereum Sepolia for development and testing. All production deployment targets **Polygon PoS**, chosen for its low fees, fast finality, and CDK Supernet infrastructure required for xZile (Chapter 2).
+> **Note on network:** Current contracts run on Ethereum Sepolia for development and testing. The contracts are standard Solidity/OpenZeppelin with no hardcoded network address or chain-specific logic. Final production network selection depends on fees, finality, ecosystem support and app-chain tooling (needed for xZile, Chapter 2).
 
 ---
 
 ## Grant Objective
 
-xZod is seeking a Polygon grant to:
-
+xZod is seeking ecosystem funding to:
 - Complete smart contract security audit
-- Deploy on Polygon PoS mainnet
+- Deploy on an EVM-compatible L2 mainnet
 - Bootstrap initial liquidity (xZOD/USDC pool)
 - Incentivize early users during Season 1 launch (24 Dec 2026)
 
-This grant will accelerate xZod's transition from testnet MVP to a live Polygon-native DeFi protocol — and lay the foundation for xZile, a flagship Polygon CDK Supernet.
+This funding would accelerate xZod's transition from testnet MVP to a live DeFi protocol, and lay the foundation for xZile, a dedicated app-chain.
 
 ---
 
-## Why Polygon
+## Why an EVM L2
 
-xZod is designed for high-frequency, low-cost cyclical DeFi mechanics that demand Polygon's infrastructure:
+xZod is designed for high-frequency, low-cost cyclical DeFi mechanics:
 
 - **Monthly reward cycles (Burn Wars)** — dozens of on-chain interactions per cycle per user
 - **Frequent staking operations** — 12 ZOD tokens with rotating APY every ~30 days
 - **NFT-based dynamic boosts** — on-chain bonus computation at every burn transaction
 - **Real-time clan competition** — leaderboard updates require fast, cheap finality
 
-Polygon provides exactly this:
+An EVM L2 provides exactly this:
 - **Low transaction fees** → viable micro-interactions (burning small amounts, claiming rewards)
 - **Fast finality** → real-time clan leaderboards and cycle management
-- **Polygon CDK** → the foundation for **xZile**, our sovereign Supernet where xZOD becomes native gas
+- - **Ethereum security and tooling** → OpenZeppelin, standard audit ecosystem
+- **App-chain frameworks** → the foundation for **xZile**, our dedicated chain where xZOD becomes native gas
 
 ### xZile — The Endgame: Predictable Gas Discounts
 
 The ultimate goal of xZod is a **sovereign blockchain with calendar-predictable economics**.
 
-On xZile (Polygon CDK Supernet, targeting 2028):
+On xZile (dedicated EVM app-chain, targeting 2028):
 - **xZOD becomes the native gas token** — every transaction burns xZOD supply organically
 - **Gas discounts are tied to the zodiac calendar** — stake the current HOT ZOD sign for 90+ days and unlock structural gas fee reductions of up to 50%
 - **Discount windows are known years in advance** — because the zodiac calendar is astronomically fixed, businesses and developers can plan infrastructure costs with a precision no other blockchain offers
@@ -97,8 +97,7 @@ On xZile (Polygon CDK Supernet, targeting 2028):
 
 **xZile is the first blockchain where gas costs are a calendar event, not a market event.**
 
-xZod aims to become a native Polygon DeFi primitive — and xZile, a flagship Polygon CDK Supernet.
-
+xZod aims to become a native DeFi primitive of the EVM L2 ecosystem — and xZile, a flagship app-chain.
 ---
 
 ## Contract Architecture
@@ -230,8 +229,8 @@ Three AI features, progressively deployed across seasons:
 - **OpenZeppelin** 5.x
 - **Standards:** ERC-20, ERC-1155
 - **Current deployment:** Ethereum Sepolia (test phase)
-- **Target deployment:** Polygon PoS mainnet
-- **Chapter 2:** Polygon CDK Supernet (xZile, 2028)
+- **Target deployment:** EVM-compatible L2 mainnet
+- **Chapter 2:** Dedicated EVM app-chain (xZile, 2028)
 - **AMM:** Uniswap V2
 
 ---
@@ -243,7 +242,7 @@ Three AI features, progressively deployed across seasons:
 - **Reentrancy protections** via OpenZeppelin ReentrancyGuard on all value-handling contracts
 - **Access control** — Ownable pattern with role separation (owner, treasury, staking pool)
 - **Non-upgradeable by design** — xZOD contract is immutable; NFTRules is the only DAO-updatable module
-- Full independent audit planned before Polygon mainnet deployment
+- Full independent audit planned before mainnet deployment
 - Audit reports will be published in this repository
 
 ---
@@ -253,8 +252,8 @@ Three AI features, progressively deployed across seasons:
 | Phase | Target | Status |
 |---|---|---|
 | Testnet (Sepolia) | Now | ✅ Live |
-| Smart contract audit | Q3 2026 | ⏳ Planned |
-| ICO — Polygon mainnet | Q4 2026 | ⏳ Planned |
+| Smart contract audit | Q4 2026 | ⏳ Planned |
+| ICO — L2 mainnet | Q4 2026 | ⏳ Planned |
 | Season 1 launch | 24 Dec 2026 | ⏳ Planned |
 | Season 2 | Jun 2027 | ⏳ Planned |
 | Season 3 | Dec 2027 | ⏳ Planned |
