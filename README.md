@@ -75,7 +75,7 @@ xZod is designed for high-frequency, low-cost cyclical DeFi mechanics:
 An EVM L2 provides exactly this:
 - **Low transaction fees** → viable micro-interactions (burning small amounts, claiming rewards)
 - **Fast finality** → real-time clan leaderboards and cycle management
-- - **Ethereum security and tooling** → OpenZeppelin, standard audit ecosystem
+- **Ethereum security and tooling** → OpenZeppelin, standard audit ecosystem
 - **App-chain frameworks** → the foundation for **xZile**, our dedicated chain where xZOD becomes native gas
 
 ### xZile — The Endgame: Predictable Gas Discounts
